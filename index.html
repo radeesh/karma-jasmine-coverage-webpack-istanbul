@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  html {
+    height: 100%;
+  }
+  body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    /*background: linear-gradient(#1BFFFF,#2E3192);*/
+    background: #1BFFFF;
+  }
+  </style>
+</head>
+<body>
+
+<h1>External Webpack Bundled JavaScript</h1>
+
+<p id="demo">A simple javascript that changes the background color when clicked</p>
+<script type="text/javascript" src="./src/bundle.js" charset="utf-8"></script>
+
+<button type="button" onclick="changeBackground()">Click</button>
+
+<p><strong>Note:</strong> changeBackground() is stored in an external file "changeColor.js".</p>
+
+</body>
+</html>

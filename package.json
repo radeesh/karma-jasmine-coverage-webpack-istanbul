@@ -1,0 +1,32 @@
+{
+  "name": "karma-webpack-istanbul",
+  "version": "1.0.0",
+  "description": "Attempt at the most basic Karma Webpack Istanbul coverage",
+  "main": "entry.js",
+  "dependencies": {
+    "webpack": "^1.13.1"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.4",
+    "istanbul-instrumenter-loader": "^0.2.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.1.2",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-jasmine-jquery": "^0.1.1",
+    "karma-phantomjs-launcher": "^1.0.1",
+    "karma-source-map-support": "^1.1.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "0.0.26",
+    "karma-webpack": "^1.8.0"
+  },
+  "scripts": {
+    "webpack": "webpack",
+    "test": "./node_modules/karma/bin/karma start karma.conf.js --single-run",
+    "debug": "./node_modules/karma/bin/karma start karma.conf.js --single-run=false --debug --browsers=Chrome",
+    "watch": "./node_modules/karma/bin/karma start karma.conf.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
